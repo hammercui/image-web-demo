@@ -76,9 +76,14 @@ const config = {
   // },
   proxy: {
     '/api': {
-      target: 'http://localhost/imgdemo',
+      target: 'http://192.168.1.211/imgdemo',
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
+    },
+    '/menu': {
+      target: 'http://localhost/imgdemo',
+      changeOrigin: true,
+      // pathRewrite: { '^/menu': '' },
     },
     // '/img':{
     //   target: 'http://localhost/imgdemo',

@@ -57,7 +57,7 @@ class ImagePage extends React.Component<ImagePageProps, any> {
 				{this.renderHeader()}
 				{
           data.map((value,index)=>{
-            return <ZImage src={"http://localhost/imgdemo/"+title+"/"+value} key={index} className={styles.img}></ZImage>
+            return <ZImage src={title+"/"+value} key={index} className={styles.img}></ZImage>
           })
         }
 				{this.renderHeader()}
